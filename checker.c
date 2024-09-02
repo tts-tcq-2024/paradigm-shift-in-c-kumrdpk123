@@ -33,7 +33,7 @@ if(chargeRate < 0.8)
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
     
-  return temp_check(temperature)|| soc_Check(soc) || check_chargeRate(chargeRate);
+  return temp_check(temperature) && soc_Check(soc) && check_chargeRate(chargeRate);
       
   }
     
